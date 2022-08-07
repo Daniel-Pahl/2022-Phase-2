@@ -22,3 +22,5 @@ You are now ready to start phase 2! We hope you will have fun while learning! Do
 
 ## Stuck? 
 Post your question on our [facebook group](https://aka.ms/nzmsa) or on our [discord server](https://discord.gg/c4Y5SAZ)
+
+
