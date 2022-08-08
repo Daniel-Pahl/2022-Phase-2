@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "name": "packagetest",
+  "description": "Welcome to the frontend section of NZMSA Phase 2. This module assumes you have the basic knowledge of HTML & CSS, JavaScript, TypeScript, React and Git, as the training was provided in 2022-Phase-1 through Microsoft Learn. Don't worry if you don't feel super confident in all of these tech, we'll guide you through it the things you'll need in phase 2. You can refer to the Phase 1 repo here: [https://github.com/NZMSA/2022-Phase-1](https://github.com/NZMSA/2022-Phase-1)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
