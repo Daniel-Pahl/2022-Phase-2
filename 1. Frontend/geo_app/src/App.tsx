@@ -14,7 +14,7 @@ function App() {
     const [cityName, setCityName] =  useState("");
   const axios = require("axios");
   return (
-    <div className="App">
+    <div id = "full" className="App">
       <h1>Country Information</h1>
       <div>
         <TextField
@@ -34,15 +34,15 @@ function App() {
         onClick={() =>{
           search();
         }}> 
-          <SearchIcon style={{fill: "brown"}} />
+          <SearchIcon style={{fill: "white"}} />
         </IconButton>
       </div>
 
-      <p>
+      {/* <p>
         You have entered {cityName.toUpperCase()}
-      </p>
+      </p> */}
 
-
+      <div id="background"></div>
     
     {countryInfo === undefined ?
 (
@@ -51,21 +51,18 @@ function App() {
     </p>
 ) :(
     <div id="Country-result">
-      <img id = "flagLeft" src= {countryInfo.flag.file} 
-      />
-      <p>
-        Capital City: {countryInfo.capital.name}
+      <img id = "flagLeft" src= {countryInfo.flag.file}/>
+      <p id="Name"><mark>Country: {countryInfo.name}</mark></p>
+      <p id= "Capital">
+        <mark>Capital City: {countryInfo.capital.name}</mark>
       </p>  
-      <p>
-        Population: {countryInfo.population}
+      <p id = "Population">
+        <mark>Population: {(countryInfo.population / 1000000).toFixed(2)} million</mark>
       </p>
-      <p>
-        Currency: {countryInfo.currency.name}
+      <p id = "Currency">
+        <mark>Currency: {countryInfo.currency.name}</mark>
       </p>
-      <a href= {countryInfo.wiki_url} > {countryInfo.name} wiki
-      </a>
-      {/* <img id = "flagRight" src= {countryInfo.flag.file} 
-      /> */}
+      <a id = "wiki" href= {countryInfo.wiki_url} > {countryInfo.name} wiki </a>
             </div>
   )}
             </div>

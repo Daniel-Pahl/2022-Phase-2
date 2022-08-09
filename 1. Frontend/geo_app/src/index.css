@@ -11,27 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#Name{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+}
 #flagLeft{
   float: left;
   margin: 20px;
-  width: 30%;
+  width: 100%;
 }
-#flagRight{
-  float: right;
-  margin: 20px;
-  width: 30%;
+#Population{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+
+}
+/* #wiki{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: xx-large; */
+/* } */
+#Capital{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+}
+#Currency{
+  position: absolute;
+  font-size: xx-large;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+mark{
+  background-color: purple;
+  color: black;
 }
 p{
-  color: orange;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 
 }
 #Country-result{
+  position: relative;
+  text-align:  center;
+  color: white;
 
-  background-color: black;
-  border-radius: 20px;
-  min-width: 150px;
-  
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 200px;
+}
+#full{
+  height: 100%;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
