@@ -50,8 +50,9 @@ function App() {
         Country not found
     </p>
 ) :(
-    <div id="Country-result">
+    <div>
       <img id = "flagLeft" src= {countryInfo.flag.file}/>
+      <span id="Country-result">
       <p id="Name"><mark>Country: {countryInfo.name}</mark></p>
       <p id= "Capital">
         <mark>Capital City: {countryInfo.capital.name}</mark>
@@ -62,9 +63,8 @@ function App() {
       <p id = "Currency">
         <mark>Currency: {countryInfo.currency.name}</mark>
       </p>
-      <p id="img">
       <a id = "wiki" href= {countryInfo.wiki_url} > {countryInfo.name} wiki </a>
-      </p>      </div>
+       </span></div>
   )}
             </div>
   )

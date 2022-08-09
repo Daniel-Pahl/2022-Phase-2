@@ -16,50 +16,13 @@ code {
     monospace;
     color: white;
 }
-#Name{
+
+#Country-result{
   position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: xx-large;
-}
-#flagLeft{
-  float: left;
-  margin: 20px;
-  width: 100%;
-}
-#Population{
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: xx-large;
-
-}
-/* #img{
-  display:block;
-  width: auto;
-  height:auto;
-  overflow:hidden;
-  text-indent:-9999px;
-  position:absolute; 
-  top:70%;
-  left:50%;
-}  */
-#Capital{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: xx-large;
-}
-#Currency{
-  position: absolute;
-  font-size: xx-large;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
 }
 mark{
   background-color: purple;
@@ -69,25 +32,16 @@ mark{
 p{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-
-}
-#Country-result{
-  position: relative;
-  text-align:  center;
-  color: white;
+  font-size: xx-large;
 
 }
 #full{
-  height: 100%;
+  min-height: 1000px;
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 a{
-  top: 70%;
-  left: 50%;
-  position:sticky;
-  transform: (-50%, -50%);
   background-color: purple;
   color: white;
+  font-size: xx-large;
   border-radius: 5px;
 }
