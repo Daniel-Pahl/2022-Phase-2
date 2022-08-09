@@ -29,7 +29,7 @@ function App() {
           placeholder="Search"
           size = "small"
           />
-        <IconButton
+        <IconButton id="search-box"
         aria-label='Search'
         onClick={() =>{
           search();
@@ -44,7 +44,7 @@ function App() {
 
       <div id="background"></div>
     
-    {countryInfo === undefined ?
+    {countryInfo === undefined || countryInfo.flag.file === null?
 (
     <p>
         Country not found
@@ -59,10 +59,10 @@ function App() {
       <p id = "Population">
         <mark>Population: {(countryInfo.population / 1000000).toFixed(2)} million</mark>
       </p>
+      <a id = "wiki" href= {countryInfo.wiki_url} > {countryInfo.name} wiki </a>
       <p id = "Currency">
         <mark>Currency: {countryInfo.currency.name}</mark>
       </p>
-      <a id = "wiki" href= {countryInfo.wiki_url} > {countryInfo.name} wiki </a>
             </div>
   )}
             </div>
