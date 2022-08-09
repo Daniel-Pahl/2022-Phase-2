@@ -36,12 +36,16 @@ code {
   font-size: xx-large;
 
 }
-/* #wiki{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  font-size: xx-large; */
-/* } */
+/* #img{
+  display:block;
+  width: auto;
+  height:auto;
+  overflow:hidden;
+  text-indent:-9999px;
+  position:absolute; 
+  top:70%;
+  left:50%;
+}  */
 #Capital{
   position: absolute;
   top: 40%;

@@ -59,11 +59,12 @@ function App() {
       <p id = "Population">
         <mark>Population: {(countryInfo.population / 1000000).toFixed(2)} million</mark>
       </p>
-      <a id = "wiki" href= {countryInfo.wiki_url} > {countryInfo.name} wiki </a>
       <p id = "Currency">
         <mark>Currency: {countryInfo.currency.name}</mark>
       </p>
-            </div>
+      <p id="img">
+      <a id = "wiki" href= {countryInfo.wiki_url} > {countryInfo.name} wiki </a>
+      </p>      </div>
   )}
             </div>
   )
@@ -84,11 +85,7 @@ function App() {
     }).catch(function (error: any) {
       console.error(error);
     });
-  // axios.get('https://world-geo-data.p.rapidapi.com/countries/'+cityName
-  // , {params: {'X-RapidAPI-Key' : '67bcbac557msh59fab0bc5c210e2p12b62ejsnc57fbfe520b0'}
-  // , 'X-RapidAPI-Host': 'world-geo-data.p.rapidapi.com'}).then((res: { data: any; })=> {
-  //     console.log(res.data);
-  //     setCountryInfo(res.data)
+
   }
 }
 
